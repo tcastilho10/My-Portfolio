@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Task Manager</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative bg-gray-900 text-white min-h-screen">
+
+  <!-- 
+    Overlay com imagem de fundo escurecida e com pointer-events-none para que
+    o utilizador possa interagir com o conteúdo por cima sem problemas
+  -->
+  <div class="absolute inset-0 bg-[url('/resources/fundo.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+
+  <!-- Conteúdo principal, posicionado acima da imagem com z-index -->
+  <div class="relative z-10">
+    <!-- Script principal da aplicação -->
+    <script type="module" src="./main.js"></script>
+  </div>
+
+</body>
+</html>
+
+
+
